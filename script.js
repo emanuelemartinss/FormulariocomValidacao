@@ -34,8 +34,8 @@ form.addEventListener('submit', (e) => {
          
         if (phone === '') {
         phoneError.textContent = 'Phone is required';
-        } else {
-        phoneError.textContent = '';
+    } else if (!(phone.length ==="11")){
+        phoneError.textContent = "Phone must be at exact 11 caracters";
         }
          
         if (password === '') {
